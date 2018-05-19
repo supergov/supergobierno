@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "dev": "babel-node server/app.js --presets=node8",
+    "dev": "babel-node server/app.js --plugins @babel/plugin-transform-modules-commonjs",
     "build": "next build",
     "start": "next start",
     "test": "eslint --quiet .",
@@ -15,19 +15,24 @@
     "singleQuote": true
   },
   "dependencies": {
+    "apollo-cache-inmemory": "^1.2.1",
+    "apollo-link-http": "^1.5.4",
     "express": "^4.16.3",
-    "next": "^6.0.0",
+    "next": "^6.0.2",
     "next-routes": "^1.4.1",
+    "next-with-apollo": "^2.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
+    "react-apollo": "^2.1.4",
     "react-display-name": "^0.2.4",
     "react-dom": "^16.3.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/core": "7.0.0-beta.47",
+    "@babel/node": "7.0.0-beta.47",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.47",
     "babel-eslint": "^8.2.3",
-    "babel-preset-node8": "^1.2.0",
-    "cross-env": "^5.1.4",
+    "cross-env": "^5.1.5",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-xo": "^0.22.1",
@@ -37,8 +42,9 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react": "^7.8.1",
     "eslint-plugin-unicorn": "^4.0.3",
+    "next-plugin-graphql": "0.0.1",
     "prettier": "^1.12.1"
   }
 }

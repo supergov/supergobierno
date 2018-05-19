@@ -1,0 +1,6 @@
+query AllFilms {
+  me {
+    name
+    lastName
+  }
+}
