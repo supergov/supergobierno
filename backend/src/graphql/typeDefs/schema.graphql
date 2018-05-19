@@ -1,0 +1,7 @@
+# import Query from './Query.graphql'
+
+schema {
+  query: Query
+  # mutation: Mutation
+  # subscription: Subscription
+}

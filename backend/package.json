@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "@types/mongoose": "^5.0.11",
+    "@types/node": "^10.0.8",
+    "@types/ws": "^5.1.1",
     "dataloader": "^1.4.0",
     "dataloader-sort": "0.0.5",
     "es6-error": "^4.1.1",
