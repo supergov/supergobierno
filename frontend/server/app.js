@@ -1,7 +1,7 @@
-import next from 'next'
-import express from 'express'
-import routes from './routes'
-import { PORT, DEV_MODE } from './internals'
+const next = require('next')
+const express = require('express')
+const routes = require('./routes').default
+const { PORT, DEV_MODE } = require('./internals')
 
 const app = next({ dev: DEV_MODE })
 const handle = routes.getRequestHandler(app)
