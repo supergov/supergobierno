@@ -1,10 +1,11 @@
 import { node } from 'prop-types'
+import Footer from './Footer'
 
 const Layout = ({ children }) => (
   <div>
     <h3>Header</h3>
     {children}
-    <h3>Footer</h3>
+    <Footer />
   </div>
 )
 
