@@ -12,7 +12,7 @@ const Layout = ({ children }) => (
         body {
           background-color: #f6f6f6;
           margin: 0;
-          font-family: 'helvetica';
+          font-family: 'Arial';
         }
       `}
     </style>

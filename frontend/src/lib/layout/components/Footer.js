@@ -1,8 +1,8 @@
 const Footer = () => (
   <div className="footer-container">
     <div>
-      <a href="">SuperGobierno.com</a>
-      <a href="">Algunos derechos reservados</a>
+      <a href="" className="home-link">SuperGobierno.com</a>
+      <a href="" >Algunos derechos reservados</a>
     </div>
 
     <div>
@@ -41,6 +41,10 @@ const Footer = () => (
       }
       a:hover {
         text-decoration: underline;
+      }
+      .home-link {
+        font-size: 22px;
+        font-weight: bold;
       }
     `}</style>
   </div>

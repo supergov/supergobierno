@@ -5,7 +5,11 @@ const active = 'none'
 
 const Header = () => (
   <header>
-    <h3>SuperGobierno.com</h3>
+    <Link href="/">
+      <a>
+        <h3>SuperGobierno.com</h3>
+      </a>
+    </Link>
     <div className="nav">
       <ul>
         <li>
@@ -46,7 +50,9 @@ const Header = () => (
         </li>
         <li>
           <Link href="">
-            <a className={active === 'login' ? 'active' : 'link-login'}> # </a>
+            <a className={active === 'login' ? 'active' : 'link-login'}>
+              Login
+            </a>
           </Link>
         </li>
       </ul>
@@ -57,6 +63,10 @@ const Header = () => (
         color: #282c37;
         text-align: center;
         min-height: 94px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
       }
       h3 {
         margin: 0;
