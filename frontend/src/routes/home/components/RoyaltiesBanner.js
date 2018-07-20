@@ -1,5 +1,6 @@
 import React from 'react'
 // import { Parallax, ParallaxLayer } from 'react-spring'
+import Slider from 'react-slick'
 import RoyaltyCard from './RoyaltyCard'
 
 const royalties = [
@@ -23,6 +24,47 @@ const royalties = [
   }
 ]
 
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1450,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+}
+
 class RoyaltiesBanner extends React.Component {
   // handleClick = to => {
   //   this.parallax.scrollTo(to)
@@ -44,11 +86,23 @@ class RoyaltiesBanner extends React.Component {
         <div className="container-wrapper">
           <p className="banner-title">Regalías</p>
           <div className="cards-wrapper">
-            {royalties.map(royalty => (
-              <div key={royalty.name}>
-                <RoyaltyCard key={royalty.name} royalty={royalty} />
-              </div>
-            ))}
+            <Slider {...settings}>
+              {royalties.map(royalty => (
+                <div key={royalty.name}>
+                  <RoyaltyCard key={royalty.name} royalty={royalty} />
+                </div>
+              ))}
+              {royalties.map(royalty => (
+                <div key={royalty.name}>
+                  <RoyaltyCard key={royalty.name} royalty={royalty} />
+                </div>
+              ))}
+              {royalties.map(royalty => (
+                <div key={royalty.name}>
+                  <RoyaltyCard key={royalty.name} royalty={royalty} />
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
         <style jsx>
@@ -57,18 +111,10 @@ class RoyaltiesBanner extends React.Component {
               background-color: #f6f6f6;
               color: #484848;
               min-height: 340px;
-            }
-            .banner-title {
-              margin: 0;
-              padding: 30px 20px 22px 13%;
-              font-weight: bolder;
-              text-align: left;
+              width: 100%;
             }
             .cards-wrapper {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              align-items: center;
-              justify-items: center;
+              height: 340px;
             }
           `}
         </style>

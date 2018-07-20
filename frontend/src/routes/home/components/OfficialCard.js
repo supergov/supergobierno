@@ -5,17 +5,17 @@ import Link from 'next/link'
 const OfficialCard = ({ official }) => (
   <div className="official-card-wrapper">
     <Link href={`/funcionarios/${official.name}`}>
-      <img
-        src={official.picture.url}
-        alt={official.name}
-        width="216px"
-        height="160px"
-      />
+      <a>
+        <img
+          src={official.picture.url}
+          alt={official.name}
+          width="216px"
+          height="160px"
+        />
+        <p className="official-name">{official.name}</p>
+        <p className="official-position">{official.position}</p>
+      </a>
     </Link>
-    <Link href={`/funcionarios/${official.name}`}>
-      <p className="official-name">{official.name}</p>
-    </Link>
-    <p className="official-position">{official.position}</p>
     <style jsx>
       {`
         .official-card-wrapper {

@@ -102,12 +102,6 @@ const OfficialsBanner = () => (
           padding: 33px 0 55px 0;
           text-align: left;
         }
-        .banner-title {
-          margin: 20px 0px;
-          font-weight: bold;
-          font-size: 18px;
-          margin-left: 15px;
-        }
         .officials-cards {
           height: 246px;
         }

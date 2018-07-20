@@ -64,7 +64,15 @@ body {
 h1,h2,h3,h4,p {
   color: #4A4A4A;
 }
-
+a {
+  text-decoration: none;
+}
+.banner-title {
+  margin: 20px 0px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 15px;
+}
 @media (max-width: 991px) {
   .container-wrapper {
     padding-left: 24px !important;

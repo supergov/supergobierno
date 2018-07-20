@@ -24,35 +24,34 @@ const RoyaltyCard = ({ royalty }) => (
     <style jsx>
       {`
         .royalty-card-wrapper {
-          width: 469px;
           background-color: #fff;
-          border-radius: 4px;
+          border-radius: 3px;
           box-shadow: 0px 0px 6px 0px rgba(72, 72, 72, 0.2);
+          margin: 0 15px;
+          overflow: hidden;
         }
         .royalty-body {
-          display: grid;
-          grid-template-columns: 282px 187px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         img {
-          width: 282px;
+          width: 60%;
           height: 155px;
-          border-radius: 4px 0 0 0;
-          cursor: pointer;
         }
         .projects-info {
-          padding: 25px 17px;
+          width: 40%;
         }
         .projects-info p {
-          margin: 7px 0;
+          margin: 12px 0;
           text-align: center;
         }
         .projects-percentage {
-          font-size: 35px;
+          font-size: 30px;
         }
         .royalty-footer {
           background-color: #474747;
           border-radius: 0 0 4px 4px;
-          color: #fff;
           height: 43px;
           display: grid;
           grid-template-columns: 2fr 1fr;
@@ -61,6 +60,7 @@ const RoyaltyCard = ({ royalty }) => (
         .royalty-footer p {
           margin: 0;
           padding-right: 10px;
+          color: #fff;
         }
         .royalty-footer .projects-name {
           font-size: 20px;
