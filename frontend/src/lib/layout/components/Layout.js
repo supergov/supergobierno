@@ -6,6 +6,7 @@ import Footer from './Footer'
 const Layout = ({ children }) => (
   <div>
     <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>
         SuperGobierno, un país sin memoria esta condenado a repetir su historia.
       </title>

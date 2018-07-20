@@ -64,3 +64,10 @@ body {
 h1,h2,h3,h4,p {
   color: #4A4A4A;
 }
+
+@media (max-width: 991px) {
+  .container-wrapper {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}

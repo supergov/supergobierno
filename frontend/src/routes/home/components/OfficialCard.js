@@ -21,22 +21,20 @@ const OfficialCard = ({ official }) => (
         .official-card-wrapper {
           background-color: #fff;
           color: #484848;
-          width: 216px;
-          height: 250px;
-          border-radius: 4px;
+          height: 240px;
+          border-radius: 3px;
           text-align: center;
           box-shadow: 0px 0px 6px 0px rgba(72, 72, 72, 0.2);
         }
         img {
           border-radius: 4px 4px 0 0;
-          background-position: center top;
           background-size: cover;
           object-fit: cover;
-          object-position: 50% 0;
           cursor: pointer;
+          width: 100%;
         }
         .official-name {
-          font-size: 20px;
+          font-size: 19px;
           margin-top: 16px;
           cursor: pointer;
         }

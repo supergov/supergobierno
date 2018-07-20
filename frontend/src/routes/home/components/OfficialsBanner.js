@@ -52,6 +52,9 @@ const OfficialsBanner = () => (
         {officials.map(official => (
           <OfficialCard key={`${official.name}-card`} official={official} />
         ))}
+        {officials.map(official => (
+          <OfficialCard key={`${official.name}-card`} official={official} />
+        ))}
       </div>
     </div>
     <style jsx>
@@ -63,14 +66,19 @@ const OfficialsBanner = () => (
           text-align: left;
         }
         .banner-title {
-          margin: 20px 13%;
-          font-weight: bolder;
+          margin: 20px 0px;
+          font-weight: bold;
+          font-size: 18px;
         }
         .officials-cards {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-auto-columns: 200px;
           align-items: center;
           justify-items: center;
+          grid-gap: 40px;
+          height: 246px;
+          grid-auto-flow: column;
+          overflow: hidden;
         }
       `}
     </style>
