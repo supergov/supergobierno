@@ -12,7 +12,7 @@ const leaders = [
   {
     name: 'Temístocles Machado',
     city: 'Buenaventura',
-    age: 46,
+    age: 47,
     case: 'Cerrado',
     picUrl:
       'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
@@ -20,7 +20,7 @@ const leaders = [
   {
     name: 'Temístocles Machado',
     city: 'Buenaventura',
-    age: 46,
+    age: 48,
     case: 'Abierto',
     picUrl:
       'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
@@ -32,9 +32,7 @@ const LeadersBanner = () => (
     <div className="container-wrapper">
       <p className="banner-title">Líderes Asesinados</p>
       <div className="leaders-cards">
-        {leaders.map(leader => (
-          <LeaderCard key={leader.name} leader={leader} />
-        ))}
+        {leaders.map(leader => <LeaderCard key={leader.age} leader={leader} />)}
       </div>
     </div>
     <style jsx>

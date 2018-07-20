@@ -62,7 +62,7 @@ const Header = () => (
         background-color: #fff;
         color: #282c37;
         text-align: center;
-        min-height: 94px;
+        min-height: 87px;
         font-weight: bold;
       }
       a {

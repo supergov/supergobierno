@@ -22,6 +22,7 @@ const OfficialCard = ({ official }) => (
           background-color: #fff;
           color: #484848;
           height: 240px;
+          margin: 7px 15px;
           border-radius: 3px;
           text-align: center;
           box-shadow: 0px 0px 6px 0px rgba(72, 72, 72, 0.2);
@@ -40,6 +41,15 @@ const OfficialCard = ({ official }) => (
         }
         p {
           margin: 10px 0;
+        }
+        @media (max-width: 991px) {
+          .official-card-wrapper img {
+            height: 135px;
+          }
+          .official-card-wrapper {
+            margin: 0px 10px;
+            height: 210px;
+          }
         }
       `}
     </style>
