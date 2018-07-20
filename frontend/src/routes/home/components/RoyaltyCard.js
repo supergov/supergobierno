@@ -44,6 +44,7 @@ const RoyaltyCard = ({ royalty }) => (
         }
         .projects-info p {
           margin: 7px 0;
+          text-align: center;
         }
         .projects-percentage {
           font-size: 35px;

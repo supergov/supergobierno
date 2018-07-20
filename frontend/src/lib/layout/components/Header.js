@@ -10,7 +10,7 @@ const Header = () => (
         <h3>SuperGobierno.com</h3>
       </a>
     </Link>
-    <div className="nav">
+    <nav>
       <ul>
         <li>
           <Link href="">
@@ -56,13 +56,14 @@ const Header = () => (
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
     <style jsx>{`
       header {
         background-color: #fff;
         color: #282c37;
         text-align: center;
         min-height: 94px;
+        font-weight: bold;
       }
       a {
         text-decoration: none;
@@ -73,23 +74,24 @@ const Header = () => (
         font-size: 22px;
         padding: 20px 0 10px 0;
       }
-      .nav ul {
+      nav ul {
         list-style: none;
         margin: 0;
         padding: 0;
       }
-      .nav li {
+      nav li {
         display: inline-block;
         margin: 10px 20px 0 20px;
       }
-      .nav li a {
+      nav li a {
         display: block;
         text-decoration: none;
         text-align: center;
         color: inherit;
         padding-bottom: 3px;
+        font-weight: normal;
       }
-      .nav li a:hover {
+      nav li a:hover {
         border-bottom: 1px solid #282c37;
       }
       .active {

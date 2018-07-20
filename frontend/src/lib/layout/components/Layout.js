@@ -1,21 +1,19 @@
 import { node } from 'prop-types'
+import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 
 const Layout = ({ children }) => (
   <div>
+    <Head>
+      <title>
+        SuperGobierno, un país sin memoria esta condenado a repetir su historia.
+      </title>
+      <link rel="stylesheet" href="/static/css/global.css" />
+    </Head>
     <Header />
     {children}
     <Footer />
-    <style global jsx>
-      {`
-        body {
-          background-color: #f6f6f6;
-          margin: 0;
-          font-family: 'Arial';
-        }
-      `}
-    </style>
   </div>
 )
 

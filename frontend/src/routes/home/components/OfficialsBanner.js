@@ -46,11 +46,13 @@ const officials = [
 
 const OfficialsBanner = () => (
   <div className="officials-banner">
-    <p className="banner-title">Funcionarios</p>
-    <div className="officials-cards">
-      {officials.map(official => (
-        <OfficialCard key={`${official.name}-card`} official={official} />
-      ))}
+    <div className="container-wrapper">
+      <p className="banner-title">Funcionarios</p>
+      <div className="officials-cards">
+        {officials.map(official => (
+          <OfficialCard key={`${official.name}-card`} official={official} />
+        ))}
+      </div>
     </div>
     <style jsx>
       {`

@@ -29,9 +29,13 @@ const leaders = [
 
 const LeadersBanner = () => (
   <div className="leaders-banner">
-    <p className="banner-title">Líderes Asesinados</p>
-    <div className="leaders-cards">
-      {leaders.map(leader => <LeaderCard key={leader.name} leader={leader} />)}
+    <div className="container-wrapper">
+      <p className="banner-title">Líderes Asesinados</p>
+      <div className="leaders-cards">
+        {leaders.map(leader => (
+          <LeaderCard key={leader.name} leader={leader} />
+        ))}
+      </div>
     </div>
     <style jsx>
       {`

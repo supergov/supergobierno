@@ -41,13 +41,15 @@ class RoyaltiesBanner extends React.Component {
   render() {
     return (
       <div className="royalties-banner">
-        <p className="banner-title">Regalías</p>
-        <div className="cards-wrapper">
-          {royalties.map(royalty => (
-            <div key={royalty.name}>
-              <RoyaltyCard key={royalty.name} royalty={royalty} />
-            </div>
-          ))}
+        <div className="container-wrapper">
+          <p className="banner-title">Regalías</p>
+          <div className="cards-wrapper">
+            {royalties.map(royalty => (
+              <div key={royalty.name}>
+                <RoyaltyCard key={royalty.name} royalty={royalty} />
+              </div>
+            ))}
+          </div>
         </div>
         <style jsx>
           {`
