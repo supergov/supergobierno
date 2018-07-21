@@ -1,3 +1,4 @@
+import Slider from 'react-slick'
 import LeaderCard from './LeaderCard'
 
 const leaders = [
@@ -26,11 +27,12 @@ const leaders = [
       'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
   }
 ]
+
 const settings = {
   dots: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 5,
   slidesToScroll: 2,
   responsive: [
     {
@@ -66,12 +68,23 @@ const settings = {
     }
   ]
 }
+
 const LeadersBanner = () => (
   <div className="leaders-banner">
     <div className="container-wrapper">
       <p className="banner-title">Líderes Asesinados</p>
       <div className="leaders-cards">
-        {leaders.map(leader => <LeaderCard key={leader.age} leader={leader} />)}
+        <Slider {...settings}>
+          {leaders.map(leader => (
+            <LeaderCard key={leader.age} leader={leader} />
+          ))}
+          {leaders.map(leader => (
+            <LeaderCard key={leader.age} leader={leader} />
+          ))}
+          {leaders.map(leader => (
+            <LeaderCard key={leader.age} leader={leader} />
+          ))}
+        </Slider>
       </div>
     </div>
     <style jsx>
@@ -80,18 +93,8 @@ const LeadersBanner = () => (
           background-color: #fff;
           color: #484848;
         }
-        .banner-title {
-          margin: 0;
-          padding: 30px 20px 22px 13%;
-          font-weight: bolder;
-          text-align: left;
-        }
         .leaders-cards {
           margin-bottom: 40px;
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          align-items: center;
-          justify-items: center;
         }
       `}
     </style>

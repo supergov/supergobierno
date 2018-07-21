@@ -31,8 +31,9 @@ const LeaderCard = ({ leader }) => (
           background-color: #ededed;
           color: #282c37;
           border-radius: 4px;
-          width: 280px;
           height: 330px;
+          margin: 0px 20px;
+          text-align: center;
           box-shadow: 0px 0px 8px 0px rgba(72, 72, 72, 0.4);
         }
         p {
