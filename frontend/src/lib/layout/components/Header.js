@@ -14,7 +14,7 @@ const Header = () => (
     </Link>
 
     <HideAt breakpoint="small">
-      <nav>
+      <nav className="stroke">
         <ul>
           <li>
             <Link href="">
@@ -55,7 +55,7 @@ const Header = () => (
           <li>
             <Link href="">
               <a className={active === 'login' ? 'active' : 'link-login'}>
-                Login
+                <i className="icon-lock-open-filled" />
               </a>
             </Link>
           </li>
@@ -88,12 +88,45 @@ const Header = () => (
         font-weight: normal;
         color: #282c37;
       }
-      nav li a:hover {
-        border-bottom: 1px solid #282c37;
+      nav li i {
+        font-size: 22px;
+        position: absolute;
+        bottom: -1px;
+        right: -11px;
+        color: #505050;
       }
+
       .active {
         font-weight: bold;
         border-bottom: 1px solid #282c37;
+      }
+      nav ul li a,
+      nav ul li a:after,
+      nav ul li a:before {
+        transition: all 0.5s;
+      }
+
+      /* stroke */
+      nav.stroke ul li a,
+      nav ul li a {
+        position: relative;
+        padding-bottom: 4px;
+      }
+      nav.stroke ul li a:after,
+      nav ul li a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: #545454;
+        height: 2px;
+      }
+      nav.stroke ul li a:hover:after {
+        width: 100%;
       }
     `}</style>
   </header>

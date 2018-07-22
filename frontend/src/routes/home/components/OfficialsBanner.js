@@ -2,6 +2,24 @@ import React from 'react'
 import Slider from 'react-slick'
 import OfficialCard from './OfficialCard'
 
+function Next(props) {
+  const { className, style, onClick } = props
+  return (
+    <div onClick={props.onClick} className="slick-next">
+      <i className="icon-right" />
+    </div>
+  )
+}
+
+function Prev(props) {
+  const { className, style, onClick } = props
+  return (
+    <div onClick={props.onClick} className="slick-prev">
+      <i className="icon-left" />
+    </div>
+  )
+}
+
 const officials = [
   {
     name: 'Álvaro Uribe',
@@ -42,6 +60,8 @@ const settings = {
   speed: 500,
   slidesToShow: 8,
   slidesToScroll: 2,
+  nextArrow: <Next />,
+  prevArrow: <Prev />,
   responsive: [
     {
       breakpoint: 1450,

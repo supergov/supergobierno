@@ -1,6 +1,23 @@
 import Slider from 'react-slick'
 import LeaderCard from './LeaderCard'
 
+function Next(props) {
+  const { className, style, onClick } = props
+  return (
+    <div onClick={props.onClick} className="slick-next">
+      <i className="icon-right" />
+    </div>
+  )
+}
+
+function Prev(props) {
+  const { className, style, onClick } = props
+  return (
+    <div onClick={props.onClick} className="slick-prev">
+      <i className="icon-left" />
+    </div>
+  )
+}
 const leaders = [
   {
     name: 'Temístocles Machado',
@@ -31,9 +48,11 @@ const leaders = [
 const settings = {
   dots: false,
   infinite: true,
-  speed: 250,
-  slidesToShow: 5,
+  speed: 500,
+  slidesToShow: 4,
   slidesToScroll: 2,
+  nextArrow: <Next />,
+  prevArrow: <Prev />,
   responsive: [
     {
       breakpoint: 1450,

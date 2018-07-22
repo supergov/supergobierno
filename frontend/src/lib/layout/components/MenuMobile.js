@@ -132,19 +132,20 @@ class MenuMobile extends React.Component {
           }
           label ul {
             z-index: 200;
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             opacity: 0;
             transition: 0.25s 0s ease-in-out;
+            width: 100%;
           }
           label a {
-            margin-bottom: 1em;
+            margin-bottom: 35px;
             display: block;
-            color: #000;
-            text-decoration: none;
+            color: #464646;
+            font-size: 22px;
           }
         `}</style>
       </label>

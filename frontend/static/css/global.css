@@ -48,6 +48,14 @@
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-twitter:before { content: '\f309'; } /* '' */
 
+.slick-prev:before, .slick-next:before {
+  content: none !important;
+}
+.icon-right, .icon-left {
+    color: #3e3e3e;
+    font-size: 24px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -137,3 +145,4 @@ a {
     padding-right: 24px !important;
   }
 }
+
