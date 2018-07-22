@@ -1,7 +1,14 @@
 import { node } from 'prop-types'
 import Head from 'next/head'
+import { BreakpointsProvider } from 'react-with-breakpoints'
 import Header from './Header'
 import Footer from './Footer'
+
+const breakpoints = {
+  small: 991,
+  medium: 768,
+  large: 1024
+}
 
 const Layout = ({ children }) => (
   <div>
@@ -22,9 +29,11 @@ const Layout = ({ children }) => (
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
     </Head>
-    <Header />
-    {children}
-    <Footer />
+    <BreakpointsProvider breakpoints={breakpoints}>
+      <Header />
+      {children}
+      <Footer />
+    </BreakpointsProvider>
   </div>
 )
 

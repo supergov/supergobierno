@@ -31,7 +31,7 @@ const leaders = [
 const settings = {
   dots: false,
   infinite: true,
-  speed: 500,
+  speed: 250,
   slidesToShow: 5,
   slidesToScroll: 2,
   responsive: [
@@ -92,9 +92,9 @@ const LeadersBanner = () => (
         .leaders-banner {
           background-color: #fff;
           color: #484848;
-        }
-        .leaders-cards {
-          margin-bottom: 40px;
+          padding-bottom: 21px;
+          margin-bottom: 17px;
+          padding-top: 1px;
         }
       `}
     </style>

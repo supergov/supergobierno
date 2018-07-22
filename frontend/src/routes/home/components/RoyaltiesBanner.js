@@ -82,39 +82,31 @@ class RoyaltiesBanner extends React.Component {
   // }
   render() {
     return (
-      <div className="royalties-banner">
-        <div className="container-wrapper">
-          <p className="banner-title">Regalías</p>
-          <div className="cards-wrapper">
-            <Slider {...settings}>
-              {royalties.map(royalty => (
-                <div key={royalty.name}>
-                  <RoyaltyCard key={royalty.name} royalty={royalty} />
-                </div>
-              ))}
-              {royalties.map(royalty => (
-                <div key={royalty.name}>
-                  <RoyaltyCard key={royalty.name} royalty={royalty} />
-                </div>
-              ))}
-              {royalties.map(royalty => (
-                <div key={royalty.name}>
-                  <RoyaltyCard key={royalty.name} royalty={royalty} />
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
+      <div className="container-wrapper royalties-banner">
+        <p className="banner-title">Regalías</p>
+
+        <Slider {...settings}>
+          {royalties.map(royalty => (
+            <div key={royalty.name}>
+              <RoyaltyCard key={royalty.name} royalty={royalty} />
+            </div>
+          ))}
+          {royalties.map(royalty => (
+            <div key={royalty.name}>
+              <RoyaltyCard key={royalty.name} royalty={royalty} />
+            </div>
+          ))}
+          {royalties.map(royalty => (
+            <div key={royalty.name}>
+              <RoyaltyCard key={royalty.name} royalty={royalty} />
+            </div>
+          ))}
+        </Slider>
+
         <style jsx>
           {`
             .royalties-banner {
-              background-color: #f6f6f6;
-              color: #484848;
-              min-height: 340px;
-              width: 100%;
-            }
-            .cards-wrapper {
-              height: 340px;
+              padding-bottom: 30px;
             }
           `}
         </style>

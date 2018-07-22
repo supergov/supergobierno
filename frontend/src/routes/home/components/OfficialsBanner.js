@@ -80,30 +80,26 @@ const OfficialsBanner = () => (
   <div className="officials-banner">
     <div className="container-wrapper">
       <p className="banner-title">Funcionarios</p>
-      <div className="officials-cards">
-        <Slider {...settings}>
-          {officials.map(official => (
-            <OfficialCard key={`${official.name}-card`} official={official} />
-          ))}
-          {officials.map(official => (
-            <OfficialCard key={`${official.name}-card`} official={official} />
-          ))}
-          {officials.map(official => (
-            <OfficialCard key={`${official.name}-card`} official={official} />
-          ))}
-        </Slider>
-      </div>
+
+      <Slider {...settings}>
+        {officials.map(official => (
+          <OfficialCard key={`${official.name}-card`} official={official} />
+        ))}
+        {officials.map(official => (
+          <OfficialCard key={`${official.name}-card`} official={official} />
+        ))}
+        {officials.map(official => (
+          <OfficialCard key={`${official.name}-card`} official={official} />
+        ))}
+      </Slider>
     </div>
     <style jsx>
       {`
         .officials-banner {
           background-color: #e8e8e8;
           color: #484848;
-          padding: 33px 0 55px 0;
+          padding: 10px 0 30px 0;
           text-align: left;
-        }
-        .officials-cards {
-          height: 246px;
         }
       `}
     </style>
