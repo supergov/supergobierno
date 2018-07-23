@@ -3,7 +3,7 @@ import { ShowAt, HideAt } from 'react-with-breakpoints'
 import MenuMobile from './MenuMobile'
 
 // This variable is just for testing. DELETE as soon as new pages are created.
-const active = 'none'
+const active = ''
 
 const Header = () => (
   <header>
@@ -45,7 +45,7 @@ const Header = () => (
             </Link>
           </li>
           <li>
-            <Link href="">
+            <Link href="/funcionarios">
               <a
                 className={
                   active === 'funcionarios' ? 'active' : 'link-funcionarios'
@@ -56,7 +56,7 @@ const Header = () => (
             </Link>
           </li>
           <li>
-            <Link href="">
+            <Link href="/login">
               <a className={active === 'login' ? 'active' : 'link-login'}>
                 <i className="icon-lock-open-filled" />
               </a>
@@ -82,6 +82,9 @@ const Header = () => (
         font-size: 22px;
         padding: 20px 0 10px 0;
       }
+      nav {
+        padding-bottom: 8px;
+      }
       nav li {
         display: inline-block;
         margin: 10px 20px 0 20px;
@@ -100,7 +103,7 @@ const Header = () => (
 
       .active {
         font-weight: bold;
-        border-bottom: 1px solid #282c37;
+        border-bottom: 2px solid #282c37;
       }
       nav ul li a,
       nav ul li a:after,
@@ -112,12 +115,12 @@ const Header = () => (
       nav.stroke ul li a,
       nav ul li a {
         position: relative;
-        padding-bottom: 4px;
+        padding-bottom: 2px;
       }
       nav.stroke ul li a:after,
       nav ul li a:after {
         position: absolute;
-        bottom: 0;
+        bottom: -2px;
         left: 0;
         right: 0;
         margin: auto;

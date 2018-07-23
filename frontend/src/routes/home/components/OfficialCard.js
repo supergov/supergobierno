@@ -7,7 +7,7 @@ const OfficialCard = ({ official }) => (
     <Link href={`/funcionarios/${official.name}`}>
       <a>
         <img
-          src={official.picture.url}
+          src={official.pictureUrl}
           alt={official.name}
           width="216px"
           height="160px"

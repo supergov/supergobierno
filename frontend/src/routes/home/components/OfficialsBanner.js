@@ -24,34 +24,74 @@ const officials = [
   {
     name: 'Álvaro Uribe',
     position: 'Senador',
-    picture: {
-      url:
-        'http://www.elcolombiano.com/documents/10157/0/580x387/0c11/580d365/none/11101/MVLJ/image_content_30492060_20180217151817.jpg'
-    }
+    pictureUrl:
+      'http://www.elcolombiano.com/documents/10157/0/580x387/0c11/580d365/none/11101/MVLJ/image_content_30492060_20180217151817.jpg'
   },
   {
     name: 'Jorge Robledo',
     position: 'Senador',
-    picture: {
-      url:
-        'https://static.iris.net.co/semana/upload/images/2012/8/14/310258_201341_1.jpg'
-    }
+    pictureUrl:
+      'https://static.iris.net.co/semana/upload/images/2012/8/14/310258_201341_1.jpg'
   },
   {
     name: 'Claudia López',
     position: 'Senadora',
-    picture: {
-      url:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Claudialopezsenadora.png/260px-Claudialopezsenadora.png'
-    }
+    pictureUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Claudialopezsenadora.png/260px-Claudialopezsenadora.png'
   },
   {
     name: 'Iván Cepeda',
     position: 'Senador',
-    picture: {
-      url:
-        'https://static.iris.net.co/semana/upload/images/2018/3/28/561864_1.jpg'
-    }
+    pictureUrl:
+      'https://static.iris.net.co/semana/upload/images/2018/3/28/561864_1.jpg'
+  },
+  {
+    name: 'Álvaro Uribe',
+    position: 'Senador',
+    pictureUrl:
+      'http://www.elcolombiano.com/documents/10157/0/580x387/0c11/580d365/none/11101/MVLJ/image_content_30492060_20180217151817.jpg'
+  },
+  {
+    name: 'Jorge Robledo',
+    position: 'Senador',
+    pictureUrl:
+      'https://static.iris.net.co/semana/upload/images/2012/8/14/310258_201341_1.jpg'
+  },
+  {
+    name: 'Claudia López',
+    position: 'Senadora',
+    pictureUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Claudialopezsenadora.png/260px-Claudialopezsenadora.png'
+  },
+  {
+    name: 'Iván Cepeda',
+    position: 'Senador',
+    pictureUrl:
+      'https://static.iris.net.co/semana/upload/images/2018/3/28/561864_1.jpg'
+  },
+  {
+    name: 'Álvaro Uribe',
+    position: 'Senador',
+    pictureUrl:
+      'http://www.elcolombiano.com/documents/10157/0/580x387/0c11/580d365/none/11101/MVLJ/image_content_30492060_20180217151817.jpg'
+  },
+  {
+    name: 'Jorge Robledo',
+    position: 'Senador',
+    pictureUrl:
+      'https://static.iris.net.co/semana/upload/images/2012/8/14/310258_201341_1.jpg'
+  },
+  {
+    name: 'Claudia López',
+    position: 'Senadora',
+    pictureUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Claudialopezsenadora.png/260px-Claudialopezsenadora.png'
+  },
+  {
+    name: 'Iván Cepeda',
+    position: 'Senador',
+    pictureUrl:
+      'https://static.iris.net.co/semana/upload/images/2018/3/28/561864_1.jpg'
   }
 ]
 const settings = {
@@ -100,12 +140,6 @@ const OfficialsBanner = () => (
       <p className="banner-title">Funcionarios</p>
 
       <Slider {...settings}>
-        {officials.map(official => (
-          <OfficialCard key={`${official.name}-card`} official={official} />
-        ))}
-        {officials.map(official => (
-          <OfficialCard key={`${official.name}-card`} official={official} />
-        ))}
         {officials.map(official => (
           <OfficialCard key={`${official.name}-card`} official={official} />
         ))}

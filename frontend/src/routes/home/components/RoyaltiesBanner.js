@@ -28,7 +28,7 @@ const royalties = [
     percentage: '15',
     value: '350.000.000',
     year: '2017',
-    imageUrl:
+    pictureUrl:
       'https://www.unipymes.com/wp-content/uploads/2015/03/2.-regalias-350x185.jpg'
   },
   {
@@ -37,7 +37,61 @@ const royalties = [
     percentage: '15',
     value: '350.000.000',
     year: '2017',
-    imageUrl:
+    pictureUrl:
+      'https://www.unipymes.com/wp-content/uploads/2015/03/2.-regalias-350x185.jpg'
+  },
+  {
+    name: 'Cerro matoso',
+    city: 'Sincelejo',
+    percentage: '15',
+    value: '350.000.000',
+    year: '2017',
+    pictureUrl:
+      'https://www.unipymes.com/wp-content/uploads/2015/03/2.-regalias-350x185.jpg'
+  },
+  {
+    name: 'Cerro matoso 2',
+    city: 'Sincelejo',
+    percentage: '15',
+    value: '350.000.000',
+    year: '2017',
+    pictureUrl:
+      'https://www.unipymes.com/wp-content/uploads/2015/03/2.-regalias-350x185.jpg'
+  },
+  {
+    name: 'Cerro matoso',
+    city: 'Sincelejo',
+    percentage: '15',
+    value: '350.000.000',
+    year: '2017',
+    pictureUrl:
+      'https://www.unipymes.com/wp-content/uploads/2015/03/2.-regalias-350x185.jpg'
+  },
+  {
+    name: 'Cerro matoso 2',
+    city: 'Sincelejo',
+    percentage: '15',
+    value: '350.000.000',
+    year: '2017',
+    pictureUrl:
+      'https://www.unipymes.com/wp-content/uploads/2015/03/2.-regalias-350x185.jpg'
+  },
+  {
+    name: 'Cerro matoso',
+    city: 'Sincelejo',
+    percentage: '15',
+    value: '350.000.000',
+    year: '2017',
+    pictureUrl:
+      'https://www.unipymes.com/wp-content/uploads/2015/03/2.-regalias-350x185.jpg'
+  },
+  {
+    name: 'Cerro matoso 2',
+    city: 'Sincelejo',
+    percentage: '15',
+    value: '350.000.000',
+    year: '2017',
+    pictureUrl:
       'https://www.unipymes.com/wp-content/uploads/2015/03/2.-regalias-350x185.jpg'
   }
 ]
@@ -104,16 +158,6 @@ class RoyaltiesBanner extends React.Component {
         <p className="banner-title">Regalías</p>
 
         <Slider {...settings}>
-          {royalties.map(royalty => (
-            <div key={royalty.name}>
-              <RoyaltyCard key={royalty.name} royalty={royalty} />
-            </div>
-          ))}
-          {royalties.map(royalty => (
-            <div key={royalty.name}>
-              <RoyaltyCard key={royalty.name} royalty={royalty} />
-            </div>
-          ))}
           {royalties.map(royalty => (
             <div key={royalty.name}>
               <RoyaltyCard key={royalty.name} royalty={royalty} />

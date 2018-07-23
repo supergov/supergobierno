@@ -5,7 +5,7 @@ const LeaderCard = ({ leader }) => (
   <div className="leader-card-wrapper">
     <Link href={`/lideres/${leader.name}`}>
       <div className="leader-card-head">
-        <img src={leader.picUrl} alt={leader.name} />
+        <img src={leader.pictureUrl} alt={leader.name} />
         <p
           className="case-state"
           style={

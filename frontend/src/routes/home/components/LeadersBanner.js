@@ -24,7 +24,7 @@ const leaders = [
     city: 'Buenaventura',
     age: 46,
     case: 'Abierto',
-    picUrl:
+    pictureUrl:
       'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
   },
   {
@@ -32,7 +32,7 @@ const leaders = [
     city: 'Buenaventura',
     age: 47,
     case: 'Cerrado',
-    picUrl:
+    pictureUrl:
       'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
   },
   {
@@ -40,7 +40,55 @@ const leaders = [
     city: 'Buenaventura',
     age: 48,
     case: 'Abierto',
-    picUrl:
+    pictureUrl:
+      'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
+  },
+  {
+    name: 'Temístocles Machado',
+    city: 'Buenaventura',
+    age: 46,
+    case: 'Abierto',
+    pictureUrl:
+      'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
+  },
+  {
+    name: 'Temístocles Machado',
+    city: 'Buenaventura',
+    age: 47,
+    case: 'Cerrado',
+    pictureUrl:
+      'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
+  },
+  {
+    name: 'Temístocles Machado',
+    city: 'Buenaventura',
+    age: 48,
+    case: 'Abierto',
+    pictureUrl:
+      'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
+  },
+  {
+    name: 'Temístocles Machado',
+    city: 'Buenaventura',
+    age: 46,
+    case: 'Abierto',
+    pictureUrl:
+      'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
+  },
+  {
+    name: 'Temístocles Machado',
+    city: 'Buenaventura',
+    age: 47,
+    case: 'Cerrado',
+    pictureUrl:
+      'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
+  },
+  {
+    name: 'Temístocles Machado',
+    city: 'Buenaventura',
+    age: 48,
+    case: 'Abierto',
+    pictureUrl:
       'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg'
   }
 ]
@@ -92,12 +140,6 @@ const LeadersBanner = () => (
       <p className="banner-title">Líderes Asesinados</p>
       <div className="leaders-cards">
         <Slider {...settings}>
-          {leaders.map(leader => (
-            <LeaderCard key={leader.age} leader={leader} />
-          ))}
-          {leaders.map(leader => (
-            <LeaderCard key={leader.age} leader={leader} />
-          ))}
           {leaders.map(leader => (
             <LeaderCard key={leader.age} leader={leader} />
           ))}

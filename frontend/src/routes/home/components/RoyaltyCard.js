@@ -5,7 +5,7 @@ const RoyaltyCard = ({ royalty }) => (
   <div className="royalty-card-wrapper">
     <div className="royalty-body">
       <Link href={`/regalias/${royalty.name}`}>
-        <img src={royalty.imageUrl} alt={royalty.name} />
+        <img src={royalty.pictureUrl} alt={royalty.name} />
       </Link>
       <div className="projects-info">
         <p className="percentage-title">Porcentaje entregado</p>
