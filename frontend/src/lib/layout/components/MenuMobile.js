@@ -70,8 +70,8 @@ class MenuMobile extends React.Component {
             right: -100px;
             top: -100px;
             z-index: 100;
-            width: 200px;
-            height: 200px;
+            width: 185px;
+            height: 157px;
             background: #fff;
             border-radius: 50% 50% 50% 50%;
             transition: 0.5s ease-in-out;
@@ -80,8 +80,8 @@ class MenuMobile extends React.Component {
           }
           label .hamburger {
             position: absolute;
-            top: 135px;
-            left: 50px;
+            top: 131px;
+            left: 38px;
             width: 30px;
             height: 2px;
             background: #000;
@@ -101,10 +101,10 @@ class MenuMobile extends React.Component {
             background: #000;
           }
           label .hamburger:before {
-            top: -10px;
+            top: -8px;s
           }
           label .hamburger:after {
-            bottom: -10px;
+            bottom: -8px;
           }
           label input {
             display: none;

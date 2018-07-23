@@ -51,8 +51,6 @@ const settings = {
   speed: 500,
   slidesToShow: 4,
   slidesToScroll: 2,
-  nextArrow: <Next />,
-  prevArrow: <Prev />,
   responsive: [
     {
       breakpoint: 1450,
