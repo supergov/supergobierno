@@ -129,9 +129,9 @@ class MenuMobile extends React.Component {
           }
           label input:checked + .menu + ul {
             opacity: 1;
+            z-index: 200;
           }
           label ul {
-            z-index: 200;
             position: fixed;
             top: 50%;
             left: 50%;

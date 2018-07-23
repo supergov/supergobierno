@@ -12,6 +12,9 @@ const Header = () => (
         <h1>SuperGobierno.com</h1>
       </a>
     </Link>
+    <div className="search">
+      <input type="text" placeholder="Buscar" />
+    </div>
 
     <HideAt breakpoint="small">
       <nav className="stroke">
@@ -72,7 +75,6 @@ const Header = () => (
         background-color: #fff;
         color: #282c37;
         text-align: center;
-        min-height: 87px;
         font-weight: bold;
       }
       h1 {
@@ -127,6 +129,28 @@ const Header = () => (
       }
       nav.stroke ul li a:hover:after {
         width: 100%;
+      }
+      @media (max-width: 991px) {
+        h1 {
+          padding-top: 10px;
+        }
+        .search {
+          position: fixed;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          background: #fff;
+          z-index: 100;
+          padding: 7px 0px;
+        }
+        .search input {
+          border-radius: 3px;
+          border: 1px solid #ddd;
+          padding: 6px 13px;
+          outline-color: #c1c1c1;
+          font-size: 16px;
+        }
       }
     `}</style>
   </header>
