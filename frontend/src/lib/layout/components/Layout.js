@@ -1,6 +1,7 @@
 import { node } from 'prop-types'
 import Head from 'next/head'
 import { BreakpointsProvider } from 'react-with-breakpoints'
+import { StickyContainer } from 'react-sticky'
 import Header from './Header'
 import Footer from './Footer'
 
@@ -30,9 +31,11 @@ const Layout = ({ children }) => (
       />
     </Head>
     <BreakpointsProvider breakpoints={breakpoints}>
-      <Header />
-      {children}
-      <Footer />
+      <StickyContainer>
+        <Header />
+        {children}
+        <Footer />
+      </StickyContainer>
     </BreakpointsProvider>
   </div>
 )

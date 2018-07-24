@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ShowAt, HideAt } from 'react-with-breakpoints'
+import { StickyContainer, Sticky } from 'react-sticky'
 import MenuMobile from './MenuMobile'
 
 // This variable is just for testing. DELETE as soon as new pages are created.
@@ -12,9 +13,20 @@ const Header = () => (
         <h1>SuperGobierno.com</h1>
       </a>
     </Link>
-    <div className="search">
-      <input type="text" placeholder="Buscar" />
-    </div>
+
+    <ShowAt breakpoint="small">
+      <Sticky topOffset={80}>
+        {({ style }) => (
+          <header style={style}>
+            {
+              <div className="search">
+                <input type="text" placeholder="Buscar" />
+              </div>
+            }
+          </header>
+        )}
+      </Sticky>
+    </ShowAt>
 
     <HideAt breakpoint="small">
       <nav className="stroke">
@@ -76,6 +88,7 @@ const Header = () => (
         color: #282c37;
         text-align: center;
         font-weight: bold;
+        z-index: 100;
       }
       h1 {
         margin: 0;
@@ -146,6 +159,9 @@ const Header = () => (
           background: #fff;
           z-index: 100;
           padding: 7px 0px;
+          box-shadow: 1px 2px 1px #9a9a9a;
+          padding-top: 16px;
+          padding-bottom: 8px;
         }
         .search input {
           border-radius: 3px;

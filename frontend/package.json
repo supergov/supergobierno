@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "node server/app.js",
     "build": "next build",
-    "start": "next start",
+    "prestart": "next build",
+    "start": "next start -p $PORT",
     "test": "eslint --quiet .",
     "fix": "eslint --fix .",
     "flow": "flow"
@@ -28,6 +29,7 @@
     "react-dom": "^16.3.2",
     "react-slick": "^0.23.1",
     "react-spring": "^5.4.0",
+    "react-sticky": "^6.0.3",
     "react-with-breakpoints": "^3.0.0"
   },
   "devDependencies": {
