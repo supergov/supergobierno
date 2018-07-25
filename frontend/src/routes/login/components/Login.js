@@ -66,6 +66,16 @@ const Login = () => (
           font-style: italic;
           font-size: 14px;
         }
+        @media (max-width: 991px) {
+          .container-wrapper {
+            grid-template-columns: 1fr;
+          }
+          .login-form-container {
+            grid-column: 1;
+            grid-row: 1;
+            margin-bottom: 20px;
+          }
+        }
       `}
     </style>
   </div>

@@ -56,7 +56,7 @@ class MenuMobile extends React.Component {
             </Link>
           </li>
           <li>
-            <Link href="">
+            <Link href="/login">
               <a className={active === 'login' ? 'active' : 'link-login'}>
                 Login
               </a>

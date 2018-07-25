@@ -139,6 +139,9 @@ a {
 .menu-open {
   overflow: hidden;
 }
+input {
+  outline-color: #a7a7a7;
+}
 @media (max-width: 991px) {
   .container-wrapper {
     padding-left: 24px !important;

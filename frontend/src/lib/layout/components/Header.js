@@ -150,6 +150,9 @@ const Header = () => (
         h1 {
           padding-top: 10px;
         }
+        header {
+          padding-bottom: 23px;
+        }
         .search {
           position: fixed;
           display: flex;

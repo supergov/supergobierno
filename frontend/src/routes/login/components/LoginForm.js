@@ -17,9 +17,15 @@ class LoginForm extends React.Component {
           <input type="email" name="email" id="email" />
           <div className="submit-token">
             {token ? (
-              <p>Token enviado</p> // Aquí va el ícono
+              <p>Token enviado</p>
             ) : (
-              <input type="submit" value="Entrar" onClick={this.handleSubmit} />
+              <input
+                type="submit"
+                value="Entrar"
+                onClick={
+                  this.handleSubmit // Aquí va el ícono
+                }
+              />
             )}
           </div>
         </form>
@@ -50,6 +56,7 @@ class LoginForm extends React.Component {
               padding: 14px 10px;
               font-size: 18px;
               text-align: center;
+              width: 60%;
             }
             .submit-token p {
               color: #484848;
@@ -60,11 +67,16 @@ class LoginForm extends React.Component {
             input[type='submit' i] {
               background-color: inherit;
               color: #484848;
-              font-size: 20px;
+              font-size: 25px;
               font-weight: bold;
               border: none;
               margin: 10% 0;
               cursor: pointer;
+            }
+            @media (max-width: 991px) {
+              input[type='email' i] {
+                width: 70%;
+              }
             }
           `}
         </style>
