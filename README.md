@@ -21,7 +21,7 @@ Clonar la versión de SG en el front-end y en el back-end
 https://github.com/supergov/supergobierno
 ```
 ```ssh
-https://github.com/supergov/supergobierno-backend
+https://github.com/supergov/supergobierno/tree/master/backend
 ```
 
 Instalar paquetes y correr los servicios para ambos repos
