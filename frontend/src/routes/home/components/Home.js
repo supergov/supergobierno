@@ -1,5 +1,5 @@
-import { Query } from 'react-apollo'
-import AllFilms from '../graphql/AllFilms.graphql'
+// import { Query } from 'react-apollo'
+// import AllFilms from '../graphql/AllFilms.graphql'
 import OfficialsBanner from './OfficialsBanner'
 import RoyaltysBanner from './RoyaltiesBanner'
 import LeadersBanner from './LeadersBanner'
@@ -11,8 +11,8 @@ const Home = () => (
     <LeadersBanner />
     <div className="container-wrapper">
       <div className="query-example-container">
-        <p>Apollo Query Example: </p>
-        <Query query={AllFilms}>
+        {/* <p>Apollo Query Example: </p>
+         <Query query={AllFilms}>
           {({ loading, data, error }) => {
             if (loading) return <h2>Loading...</h2>
             if (error) return <h2>An error occurred ({error.message})</h2>
@@ -23,7 +23,7 @@ const Home = () => (
               </div>
             )
           }}
-        </Query>
+        </Query> */}
       </div>
     </div>
     <style jsx>
