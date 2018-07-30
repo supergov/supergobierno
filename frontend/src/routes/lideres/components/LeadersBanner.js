@@ -1,23 +1,25 @@
 import Slider from 'react-slick'
+import PropTypes from 'prop-types'
 import LeaderCard from './LeaderCard'
 
-function Next(props) {
-  const { className, style, onClick } = props
-  return (
-    <div onClick={props.onClick} className="slick-next">
-      <i className="icon-right" />
-    </div>
-  )
-}
+// function Next(props) {
+//   const { className, style, onClick } = props
+//   return (
+//     <div onClick={props.onClick} className="slick-next">
+//       <i className="icon-right" />
+//     </div>
+//   )
+// }
 
-function Prev(props) {
-  const { className, style, onClick } = props
-  return (
-    <div onClick={props.onClick} className="slick-prev">
-      <i className="icon-left" />
-    </div>
-  )
-}
+// function Prev(props) {
+//   const { className, style, onClick } = props
+//   return (
+//     <div onClick={props.onClick} className="slick-prev">
+//       <i className="icon-left" />
+//     </div>
+//   )
+// }
+
 const leaders = [
   {
     name: 'Temístocles Machado',
@@ -134,10 +136,10 @@ const settings = {
   ]
 }
 
-const LeadersBanner = () => (
+const LeadersBanner = props => (
   <div className="leaders-banner">
     <div className="container-wrapper">
-      <p className="banner-title">Líderes Asesinados</p>
+      <p className="banner-title">{props.title}</p>
       <div className="leaders-cards">
         <Slider {...settings}>
           {leaders.map(leader => (
@@ -159,5 +161,9 @@ const LeadersBanner = () => (
     </style>
   </div>
 )
+
+LeadersBanner.propTypes = {
+  title: PropTypes.string.isRequired
+}
 
 export default LeadersBanner

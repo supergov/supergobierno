@@ -7,6 +7,8 @@ const routes = nextRoutes()
 const { Link, Router } = routes
 
 routes.add('home', '/', '/')
+routes.add('login', '/login')
+routes.add('lideres', '/lideres')
 
 module.exports = {
   Link,

@@ -32,7 +32,7 @@ const Header = () => (
       <nav className="stroke">
         <ul>
           <li>
-            <Link href="">
+            <Link href="/lideres">
               <a className={active === 'lideres' ? 'active' : 'link-lideres'}>
                 Líderes asesinados
               </a>

@@ -1,14 +1,14 @@
 import { Query } from 'react-apollo'
 import AllFilms from '../graphql/AllFilms.graphql'
+import LeadersBanner from '../../lideres/components/LeadersBanner'
 import OfficialsBanner from './OfficialsBanner'
 import RoyaltysBanner from './RoyaltiesBanner'
-import LeadersBanner from './LeadersBanner'
 
 const Home = () => (
   <div>
     <OfficialsBanner />
     <RoyaltysBanner />
-    <LeadersBanner />
+    <LeadersBanner title="Líderes Asesinados" />
     <div className="container-wrapper">
       <div className="query-example-container">
         <p>Apollo Query Example: </p>
