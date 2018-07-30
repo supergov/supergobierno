@@ -1,12 +1,10 @@
 {
   "name": "supergov-frontend",
   "version": "0.0.1",
-  "main": "index.js",
   "scripts": {
     "dev": "node server/app.js",
     "build": "next build",
-    "prestart": "next build",
-    "start": "next start -p $PORT",
+    "start": "next start",
     "test": "eslint --quiet .",
     "fix": "eslint --fix .",
     "flow": "flow"
