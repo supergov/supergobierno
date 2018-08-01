@@ -72,7 +72,7 @@ const Leader = () => (
                 comparte anónimamente y ayuda a cerrar este caso.
               </p>
               <Link href="">
-                <input type="button" value="Actualizar caso" />
+                <button type="button">Actualizar caso</button>
               </Link>
             </div>
           </div>
@@ -160,16 +160,13 @@ const Leader = () => (
         informar
       </h1>
       <Link href="">
-        <input type="button" value="Reportar caso" />
+        <button type="button">Reportar caso</button>
       </Link>
     </div>
     <style jsx>
       {`
         .leader-wrapper {
           text-align: center;
-        }
-        .leader-wrapper a {
-          color: inherit;
         }
         #go-back {
           font-size: 20px;
@@ -197,6 +194,8 @@ const Leader = () => (
           background-size: cover;
           object-fit: cover;
           object-position: 50% 0;
+          max-width: 650px;
+          margin: 0 auto;
         }
         .leader-images-banner p {
           background-color: #fff;
@@ -250,15 +249,15 @@ const Leader = () => (
         .bold-text {
           font-weight: bold;
         }
-        .leader-update input {
+        .leader-update button {
           background-color: #fff;
-          font-size: inherit;
           font-weight: bold;
-          margin-top: 8px;
+          margin-top: 20px;
           padding: 8px 20px;
           border: 1px solid #e6e6e6;
           border-radius: 4px;
           box-shadow: 0px 1px 2px 0px rgba(72, 72, 72, 0.5);
+          font-size: 18px;
         }
         .leader-info-body {
           background-color: #fff;
@@ -322,7 +321,7 @@ const Leader = () => (
         .report-leader h1 {
           align-self: center;
         }
-        .report-leader input {
+        .report-leader button {
           background-color: #fff;
           font-size: 22px;
           font-weight: bold;
