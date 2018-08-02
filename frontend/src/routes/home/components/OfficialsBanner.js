@@ -2,30 +2,30 @@ import React from 'react'
 import Slider from 'react-slick'
 import OfficialCard from './OfficialCard'
 
-function Next(props) {
-  const { className, style, onClick } = props
-  return (
-    <div onClick={props.onClick} className="slick-next">
-      <i className="icon-right" />
-    </div>
-  )
-}
+// function Next(props) {
+//   const { className, style, onClick } = props
+//   return (
+//     <div onClick={props.onClick} className="slick-next">
+//       <i className="icon-right" />
+//     </div>
+//   )
+// }
 
-function Prev(props) {
-  const { className, style, onClick } = props
-  return (
-    <div onClick={props.onClick} className="slick-prev">
-      <i className="icon-left" />
-    </div>
-  )
-}
+// function Prev(props) {
+//   const { className, style, onClick } = props
+//   return (
+//     <div onClick={props.onClick} className="slick-prev">
+//       <i className="icon-left" />
+//     </div>
+//   )
+// }
 
 const officials = [
   {
     name: 'Álvaro Uribe',
     position: 'Senador',
     pictureUrl:
-      'http://www.elcolombiano.com/documents/10157/0/580x387/0c11/580d365/none/11101/MVLJ/image_content_30492060_20180217151817.jpg'
+      'https://www.las2orillas.co/wp-content/uploads/2016/05/uribe.jpg'
   },
   {
     name: 'Jorge Robledo',
@@ -49,7 +49,7 @@ const officials = [
     name: 'Álvaro Uribe',
     position: 'Senador',
     pictureUrl:
-      'http://www.elcolombiano.com/documents/10157/0/580x387/0c11/580d365/none/11101/MVLJ/image_content_30492060_20180217151817.jpg'
+      'https://www.las2orillas.co/wp-content/uploads/2016/05/uribe.jpg'
   },
   {
     name: 'Jorge Robledo',
@@ -73,7 +73,7 @@ const officials = [
     name: 'Álvaro Uribe',
     position: 'Senador',
     pictureUrl:
-      'http://www.elcolombiano.com/documents/10157/0/580x387/0c11/580d365/none/11101/MVLJ/image_content_30492060_20180217151817.jpg'
+      'https://www.las2orillas.co/wp-content/uploads/2016/05/uribe.jpg'
   },
   {
     name: 'Jorge Robledo',

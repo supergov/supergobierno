@@ -6,13 +6,13 @@ const leader = {
   age: 46,
   case: 'Abierto',
   images: [
-    'http://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-2.jpg',
-    'http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg',
-    'http://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-12.jpg',
-    'http://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-4.jpg',
-    'http://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-11.jpg',
-    'http://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-5.jpg',
-    'http://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-9.jpg'
+    'https://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-2.jpg',
+    'https://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg',
+    'https://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-12.jpg',
+    'https://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-4.jpg',
+    'https://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-11.jpg',
+    'https://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-5.jpg',
+    'https://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-9.jpg'
   ],
   smallDescription:
     'Clan del Golfo, dos asesinos en moto, de nombres Claudio y Luis alias "el máquina", son señalados por la comunidad.',
@@ -50,7 +50,7 @@ const Leader = () => (
       <div className="leader-info">
         <div className="leader-info-head">
           <div className="leader-images-banner">
-            <img src="http://pacifista.co/wp-content/uploads/2018/01/Tem%C3%ADstocles-1.jpg" />
+            <img src="https://pacifista.co/wp-content/uploads/2017/11/Tem%C3%ADstocles-2.jpg" />
             <p>{`${leader.age} años`}</p>
           </div>
           <div className="leader-basic-info">
@@ -165,6 +165,9 @@ const Leader = () => (
     </div>
     <style jsx>
       {`
+        .slick-slider {
+          width: 50%;
+        }
         .leader-wrapper {
           text-align: center;
         }

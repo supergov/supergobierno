@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const LeaderCard = ({ leader }) => (
   <div className="leader-card-wrapper">
-    <Link href={`/lideres/${leader.name}`}>
+    <Link href={`/lideres/lider`}>
       <div className="leader-card-head">
         <img src={leader.pictureUrl} alt={leader.name} />
         <p
