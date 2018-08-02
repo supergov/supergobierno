@@ -79,65 +79,62 @@ const Leader = () => (
         </div>
         <div className="leader-info-body">
           <h1>¿Quién fue este héroe?</h1>
-          <div className="leader-info-text">
-            {/* <p>{leader.description}</p> */}
-            <p>
-              Pese a que era cauteloso por tantos años de lucha entre amenazas,<sup
-              >
-                {1}
-              </sup>Temístocles Machado tenía la claridad y la valentía que
-              hacía líder en Buenaventura.<br /> Para los allegados y líderes
-              del paro cívico realizado en esa ciudad el año pasado, el
-              asesinato de Temis, como le decían, representa un mensaje a
-              quienes luchan por derechos del territorio y comunidades.
-            </p>
-            <p>
-              El líder fue asesinado por dos pistoleros que llegaron en la tarde
-              del sábado y le dispararon en un parqueadero del barrio Isla de la
-              Paz, a un lado de la vía alterna interna, en cuyo alrededores hay
-              tierras en pugna por las comunidades.<sup>{2}</sup>
-            </p>
-            <p>
-              Ese barrio era parte de luchadores como Machado, para que no les
-              llegara la violencia de grupos armados. Era una tarea heredada de
-              su padre, José Evangelista, también líder comunitario.<sup>
-                {3}
-              </sup>{' '}
-              En 2006 habían asesinado a Albeiro Osorio y Wílber Rodríguez, dos
-              compañeros de lucha. Y a él le asignaron escolta por un tiempo.
-              Por temor, la mamá le pedía que se cuidara.
-            </p>
-            <p>
-              En su discurso, Machado ponía de presente que la tierra donde se
-              construyó uno de los puertos era de los ancestros. Recordaba cómo
-              desaparecieron canchas en arena y cómo les habían tapado el acceso
-              al mar en el estero El Aguacatico, para nadar y pescar.
-            </p>
-            <p>
-              También sostenía que con la construcción de un puerto privado se
-              tapó un cementerio clandestino de los paramilitares del bloque
-              Calima. Así quedó en el informe del Centro Nacional de Memoria
-              Histórica.
-            </p>
-            <p>
-              Cuando se supo de su muerte en una clínica, afuera la gente empezó
-              a gritar: “El pueblo no se rinde, carajo”, un coro que más de una
-              vez él entonó.
-            </p>
-            <p>
-              A Machado, padre de 11 hijos, lo rodearon presiones. En el 2013,
-              como candidato al Concejo le pintaron sus vallas con pintura roja.
-            </p>
-          </div>
-          <div className="leader-info-contributions">
-            <h1>Contribuciones</h1>
-            <div className="leader-contributions-list">
-              <ul>
-                {leader.contributions.map(contribution => (
-                  <li key={contribution[0]}>{`<i /> ${contribution}`}</li>
-                ))}
-              </ul>
-            </div>
+          <p>
+            Pese a que era cauteloso por tantos años de lucha entre amenazas,<sup
+            >
+              {1}
+            </sup>Temístocles Machado tenía la claridad y la valentía que hacía
+            líder en Buenaventura.<br /> Para los allegados y líderes del paro
+            cívico realizado en esa ciudad el año pasado, el asesinato de Temis,
+            como le decían, representa un mensaje a quienes luchan por derechos
+            del territorio y comunidades.
+          </p>
+          <p>
+            El líder fue asesinado por dos pistoleros que llegaron en la tarde
+            del sábado y le dispararon en un parqueadero del barrio Isla de la
+            Paz, a un lado de la vía alterna interna, en cuyo alrededores hay
+            tierras en pugna por las comunidades.<sup>{2}</sup>
+          </p>
+          <p>
+            Ese barrio era parte de luchadores como Machado, para que no les
+            llegara la violencia de grupos armados. Era una tarea heredada de su
+            padre, José Evangelista, también líder comunitario.<sup>{3}</sup> En
+            2006 habían asesinado a Albeiro Osorio y Wílber Rodríguez, dos
+            compañeros de lucha. Y a él le asignaron escolta por un tiempo. Por
+            temor, la mamá le pedía que se cuidara.
+          </p>
+          <p>
+            En su discurso, Machado ponía de presente que la tierra donde se
+            construyó uno de los puertos era de los ancestros. Recordaba cómo
+            desaparecieron canchas en arena y cómo les habían tapado el acceso
+            al mar en el estero El Aguacatico, para nadar y pescar.
+          </p>
+          <p>
+            También sostenía que con la construcción de un puerto privado se
+            tapó un cementerio clandestino de los paramilitares del bloque
+            Calima. Así quedó en el informe del Centro Nacional de Memoria
+            Histórica.
+          </p>
+          <p>
+            Cuando se supo de su muerte en una clínica, afuera la gente empezó a
+            gritar: “El pueblo no se rinde, carajo”, un coro que más de una vez
+            él entonó.
+          </p>
+          <p>
+            A Machado, padre de 11 hijos, lo rodearon presiones. En el 2013,
+            como candidato al Concejo le pintaron sus vallas con pintura roja.
+          </p>
+
+          <h1>Contribuciones</h1>
+          <div className="leader-contributions-list">
+            <ul>
+              {leader.contributions.map(contribution => (
+                <li key={contribution[0]}>
+                  <i className="icon-ok" />
+                  {`${contribution}`}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
         <div className="leader-info-references">
@@ -263,7 +260,7 @@ const Leader = () => (
           background-color: #fff;
           text-align: justify;
           margin: 20px;
-          padding: 20px 0;
+          padding: 20px 50px;
           box-shadow: 0px 2px 6px -1px rgba(72, 72, 72, 0.3);
         }
         .leader-info-body h1 {
@@ -271,18 +268,13 @@ const Leader = () => (
           font-size: 18px;
           font-weight: bold;
         }
-        .leader-info-text {
-          margin: 0 50px;
-        }
-        .leader-info-text p {
+
+        .leader-info-body p {
           padding: 10px 0;
         }
-        .leader-info-text sup {
+        .leader-info-body sup {
           vertical-align: super;
           font-size: smaller;
-        }
-        .leader-contributions-list {
-          margin: 0 50px;
         }
         .leader-contributions-list ul {
           display: grid;
@@ -293,7 +285,7 @@ const Leader = () => (
           background-color: #fff;
           text-align: left;
           margin: 20px;
-          padding: 20px 0;
+          padding: 20px 50px;
           box-shadow: 0px 2px 6px -1px rgba(72, 72, 72, 0.3);
         }
         .leader-info-references h1 {
@@ -301,12 +293,14 @@ const Leader = () => (
           font-size: 18px;
           font-weight: bold;
         }
-        .leader-info-references ul {
-          margin-left: 50px;
-        }
+
         .leader-info-references li {
           padding: 8px 0;
         }
+        .leader-contributions-list ul li i {
+          margin-right: 7px;
+        }
+
         .last-update {
           font-style: italic;
           font-size: 14px;
@@ -314,9 +308,10 @@ const Leader = () => (
           text-align: right;
         }
         .report-leader {
-          display: inline-flex;
+          display: flex;
           margin: 40px 0;
           font-size: 22px;
+          justify-content: center;
         }
         .report-leader h1 {
           align-self: center;
@@ -334,6 +329,25 @@ const Leader = () => (
         .other-leaders-banner {
           text-align: left;
           margin-top: 30px;
+        }
+        @media (max-width: 991px) {
+          .leader-info-head,
+          .leader-contributions-list ul {
+            grid-template-columns: 1fr;
+          }
+          .leader-info-body,
+          .leader-info-references {
+            padding: 20px 20px;
+          }
+          .report-leader {
+            font-size: 20px;
+            padding: 20px;
+            flex-direction: column;
+          }
+          .report-leader button {
+            font-size: 20px;
+            margin-top: 10px;
+          }
         }
       `}
     </style>
