@@ -89,6 +89,8 @@ const Header = () => (
         text-align: center;
         font-weight: bold;
         z-index: 100;
+        box-shadow: 1px 1px 2px #d4d4d4;
+        position: relative;
       }
       h1 {
         margin: 0;

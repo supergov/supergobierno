@@ -18,7 +18,7 @@ class MenuMobile extends React.Component {
         <span className="menu" onClick={this.OpenMenu}>
           <span className="hamburger" />
         </span>
-        <ul>
+        <ul className="list-menu">
           <li>
             <Link href="/lideres">
               <a className={active === 'lideres' ? 'active' : 'link-lideres'}>
@@ -131,8 +131,10 @@ class MenuMobile extends React.Component {
             opacity: 1;
             z-index: 200;
           }
+
           label ul {
             position: fixed;
+            display: none;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
